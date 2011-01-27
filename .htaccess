@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+  Options +Indexes
+  RewriteEngine on
+
+  RewriteBase /kis/
+
+  # test string is a valid files
+  RewriteCond %{SCRIPT_FILENAME} !-f
+  # test string is a valid directory
+  RewriteCond %{SCRIPT_FILENAME} !-d
+
+  #RewriteCond %{REQUEST_URI} !(.*)/$
+  #RewriteCond %{REQUEST_URI} !\.(?:(?:js)|(?:css)|(?:png)|(?:jpg)|(?:gif)|(?:txt)|(?:swf)|(?:xml))$
+  #RewriteRule ^(.*)$ $1/ [L,R=301]
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule (.*) index.php?$1 [QSA,L]
+
+</IfModule>

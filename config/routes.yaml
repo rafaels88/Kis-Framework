@@ -1,0 +1,16 @@
+"/":
+    controller: Home
+    action: index
+    name: home
+    
+"/error/404/":
+    controller: Error
+    action: error404
+    name: error_404
+    behavior: 404
+
+"/login/required/":
+    controller: Login
+    action: required
+    name: login-required
+    behavior: login
