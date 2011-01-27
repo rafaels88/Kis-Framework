@@ -1,0 +1,10 @@
+"/":
+    controller: Home
+    action: index
+    name: home
+    
+"/error/404/":
+    controller: Error
+    action: error404
+    name: error_404
+    behavior: 404

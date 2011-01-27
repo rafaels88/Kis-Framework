@@ -1,0 +1,17 @@
+$().ready(function(){
+    $("#form_busca_por_ingrediente").submit(function(){
+
+        var lista_ingredientes = this.ingredientes.value;
+        
+        $.getJSON("busca-por-ingrediente/"+lista_ingredientes,
+            function(Receita){
+                $.each(Receita, function(i, receita){
+                    $("<li><a href='receita/view/"+receita.id+"'>"+receita.nome+"</a></li>")
+                        .appendTo("#lista_ingredientes_busca")
+                });
+            }
+        );
+
+        return false;
+    });
+});

@@ -1,0 +1,12 @@
+div.footer {
+    background-color: white;
+    margin-bottom: 10px;
+}
+div.footer * {
+    color: #A00;
+    font-size: small;
+}
+div.footer .footer_conteudo {
+    text-align: center;
+    font-size: 12px;
+}

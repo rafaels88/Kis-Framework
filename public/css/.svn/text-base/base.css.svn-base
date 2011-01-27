@@ -1,0 +1,60 @@
+/*body {
+	text-align: left;
+	background: url('background.png') no-repeat;
+	
+}
+.container {
+	width: 900px;
+	margin: auto;
+	padding:20px;
+	background-color: white;
+	opacity: 0.9;
+	border: 1px solid white;
+	border-radius: 0.7em;
+}
+.container div.main_conteudo {
+	height: 600px;
+	display: block;
+	clear: both;
+}*/
+body {
+    margin: 0;
+}
+body * {
+    font-family: arial;
+    font-size: small;
+    color: #222;
+}
+body div.global {
+    text-align: center;
+}
+div.interno {
+    width: 965px;
+    text-align: left;
+    clear: both;
+}
+h2 {
+    font-family: "georgia", sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    letter-spacing: -0.04em;
+    font-weight: normal;
+}
+h3 {
+    font-size: 18px;
+}
+.clear {
+    clear: both;
+}
+
+form .label {
+    text-align:right; 
+    font-size:14px; 
+    display: inline-block; 
+    margin: 5px 0;
+    font-family: serif;
+}
+form input.text {
+    height: 18px;
+    width: 200px;
+}

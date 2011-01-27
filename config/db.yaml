@@ -1,0 +1,17 @@
+production:
+    host: localhost
+    username: root
+    password: 123456
+    database: master
+
+development:
+    host: localhost
+    username: root
+    password: 123456
+    database: dev 
+
+test:
+    host: localhost
+    username: root
+    password: 123456
+    database: test

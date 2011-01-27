@@ -1,0 +1,5 @@
+ol.lista li a.editar_receita {
+    text-decoration: none;
+    font-size: 13px;
+    color: #777;
+}

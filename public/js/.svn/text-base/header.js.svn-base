@@ -1,0 +1,10 @@
+$().ready(function(){
+    $("div.header div.menu ul.lista_menu li a").hover(
+        function(){
+            $(this).addClass("hover");
+        },
+        function(){
+            $(this).removeClass("hover");
+        }
+    );
+});
