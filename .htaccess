@@ -3,7 +3,7 @@
   Options +Indexes
   RewriteEngine on
 
-  RewriteBase /kis/
+  RewriteBase /
 
   # test string is a valid files
   RewriteCond %{SCRIPT_FILENAME} !-f
